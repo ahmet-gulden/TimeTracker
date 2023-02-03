@@ -25,8 +25,9 @@ private extension SceneDelegate {
     func prepareWindow(for windowScene: UIWindowScene?) {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.windowScene = windowScene
+        let store = UserDefaultsLoggedTimeStore(userDefaults: UserDefaults())
         let timerContext = OneSecondPulseTimerContext()
-        let viewModel = MainViewModel(timerContext: timerContext)
+        let viewModel = MainViewModel(timerContext: timerContext, loggedTimeStore: store)
         let rootViewController = MainViewController(viewModel: viewModel)
         rootViewController.title = "Time Tracker"
         let navigationController = UINavigationController(rootViewController: rootViewController)

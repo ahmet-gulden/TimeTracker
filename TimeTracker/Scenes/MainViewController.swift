@@ -28,6 +28,7 @@ final class MainViewController: UIViewController {
         viewModel.setStateChangeHandler { [weak self] change in
             self?.handleStateChange(change)
         }
+        viewModel.fetchLoggedTimes()
     }
 }
 
@@ -81,6 +82,12 @@ private extension MainViewController {
 private extension MainViewController {
     func handleStateChange(_ change: MainViewStateChange) {
         switch change {
+        case .persistedLogsFetching:
+            logEntryView.isEnabled = false
+            reloadTableView()
+        case .logsUpdated:
+            logEntryView.isEnabled = true
+            reloadTableView()
         case .recordingStarted:
             logEntryView.isRecording = true
         case .recordingStopped:
@@ -89,5 +96,13 @@ private extension MainViewController {
         case .elapsedTimeUpdated:
             logEntryView.elapsedTimeText = viewModel.elapsedTimeText
         }
+    }
+}
+
+// MARK: Helpers
+
+private extension MainViewController {
+    func reloadTableView() {
+        // TODO
     }
 }
