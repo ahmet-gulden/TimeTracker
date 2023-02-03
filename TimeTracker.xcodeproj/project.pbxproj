@@ -14,7 +14,10 @@
 		05C3D1E5298BC973002B20D8 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D1E4298BC973002B20D8 /* Global.swift */; };
 		05C3D1EE298BC9A7002B20D8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D1E8298BC9A7002B20D8 /* ViewModel.swift */; };
 		05C3D2EE298D854C002B20D8 /* LoggedTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D2B6298BCD21002B20D8 /* LoggedTime.swift */; };
+		05C3D1F1298BC9A7002B20D8 /* MainViewPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D1EB298BC9A7002B20D8 /* MainViewPresentation.swift */; };
+		05C3D1FD298BC9E7002B20D8 /* UITableView+EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D1F6298BC9E7002B20D8 /* UITableView+EmptyState.swift */; };
 		05C3D200298BC9E7002B20D8 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D1F9298BC9E7002B20D8 /* UIView+Layout.swift */; };
+		05C3D21F298BCA31002B20D8 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D208298BCA31002B20D8 /* EmptyStateView.swift */; };
 		05C3D223298BCA31002B20D8 /* TitledComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D210298BCA31002B20D8 /* TitledComponentView.swift */; };
 		05C3D291298BCA92002B20D8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D255298BCA92002B20D8 /* MainViewController.swift */; };
 		05C3D292298BCA92002B20D8 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D257298BCA92002B20D8 /* MainViewModel.swift */; };
@@ -49,7 +52,10 @@
 		05C3D1C6298BC4B5002B20D8 /* TimeTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C3D1E4298BC973002B20D8 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		05C3D1E8298BC9A7002B20D8 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		05C3D1EB298BC9A7002B20D8 /* MainViewPresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewPresentation.swift; sourceTree = "<group>"; };
+		05C3D1F6298BC9E7002B20D8 /* UITableView+EmptyState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+EmptyState.swift"; sourceTree = "<group>"; };
 		05C3D1F9298BC9E7002B20D8 /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		05C3D208298BCA31002B20D8 /* EmptyStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		05C3D210298BCA31002B20D8 /* TitledComponentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitledComponentView.swift; sourceTree = "<group>"; };
 		05C3D255298BCA92002B20D8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		05C3D257298BCA92002B20D8 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
@@ -140,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				05C3D2D1298D0C91002B20D8 /* Int+Date.swift */,
+				05C3D1F6298BC9E7002B20D8 /* UITableView+EmptyState.swift */,
 				05C3D2E1298D477C002B20D8 /* UIViewController+Alert.swift */,
 				05C3D1F9298BC9E7002B20D8 /* UIView+Layout.swift */,
 			);
@@ -150,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				05C3D2D7298D464F002B20D8 /* Containers */,
+				05C3D2D8298D4656002B20D8 /* EmptyStateView */,
 				05C3D2DD298D469D002B20D8 /* LogEntryView */,
 				05C3D2DE298D46FA002B20D8 /* TextFieldView */,
 			);
@@ -161,6 +169,7 @@
 			children = (
 				05C3D255298BCA92002B20D8 /* MainViewController.swift */,
 				05C3D257298BCA92002B20D8 /* MainViewModel.swift */,
+				05C3D1EB298BC9A7002B20D8 /* MainViewPresentation.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -190,6 +199,14 @@
 				05C3D2BF298C21A7002B20D8 /* MarginedView.swift */,
 			);
 			path = Containers;
+			sourceTree = "<group>";
+		};
+		05C3D2D8298D4656002B20D8 /* EmptyStateView */ = {
+			isa = PBXGroup;
+			children = (
+				05C3D208298BCA31002B20D8 /* EmptyStateView.swift */,
+			);
+			path = EmptyStateView;
 			sourceTree = "<group>";
 		};
 		05C3D2DD298D469D002B20D8 /* LogEntryView */ = {
@@ -311,7 +328,9 @@
 				05C3D2EE298D854C002B20D8 /* LoggedTime.swift in Sources */,
 				05C3D200298BC9E7002B20D8 /* UIView+Layout.swift in Sources */,
 				05C3D1E5298BC973002B20D8 /* Global.swift in Sources */,
+				05C3D21F298BCA31002B20D8 /* EmptyStateView.swift in Sources */,
 				05C3D2C4298C3C76002B20D8 /* LogEntryView.swift in Sources */,
+				05C3D1FD298BC9E7002B20D8 /* UITableView+EmptyState.swift in Sources */,
 				05C3D291298BCA92002B20D8 /* MainViewController.swift in Sources */,
 				05C3D1B4298BC4B4002B20D8 /* AppDelegate.swift in Sources */,
 				05C3D223298BCA31002B20D8 /* TitledComponentView.swift in Sources */,
@@ -325,6 +344,7 @@
 				05C3D2E4298D4F96002B20D8 /* OneSecondPulseTimerContext.swift in Sources */,
 				05C3D2C0298C21A7002B20D8 /* MarginedView.swift in Sources */,
 				05C3D292298BCA92002B20D8 /* MainViewModel.swift in Sources */,
+				05C3D1F1298BC9A7002B20D8 /* MainViewPresentation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
