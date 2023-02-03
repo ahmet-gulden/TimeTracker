@@ -17,6 +17,9 @@
 		05C3D200298BC9E7002B20D8 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D1F9298BC9E7002B20D8 /* UIView+Layout.swift */; };
 		05C3D223298BCA31002B20D8 /* TitledComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D210298BCA31002B20D8 /* TitledComponentView.swift */; };
 		05C3D2C0298C21A7002B20D8 /* MarginedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D2BF298C21A7002B20D8 /* MarginedView.swift */; };
+		05C3D2C4298C3C76002B20D8 /* LogEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D2C3298C3C76002B20D8 /* LogEntryView.swift */; };
+		05C3D2CE298CFA56002B20D8 /* AccessoriedMarginedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D2CD298CFA56002B20D8 /* AccessoriedMarginedView.swift */; };
+		05C3D2E0298D4701002B20D8 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D2DF298D4701002B20D8 /* TextFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		05C3D210298BCA31002B20D8 /* TitledComponentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitledComponentView.swift; sourceTree = "<group>"; };
 		05C3D2B6298BCD21002B20D8 /* LoggedTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedTime.swift; sourceTree = "<group>"; };
 		05C3D2BF298C21A7002B20D8 /* MarginedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarginedView.swift; sourceTree = "<group>"; };
+		05C3D2C3298C3C76002B20D8 /* LogEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEntryView.swift; sourceTree = "<group>"; };
+		05C3D2CD298CFA56002B20D8 /* AccessoriedMarginedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoriedMarginedView.swift; sourceTree = "<group>"; };
+		05C3D2DF298D4701002B20D8 /* TextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				05C3D2D7298D464F002B20D8 /* Containers */,
+				05C3D2DD298D469D002B20D8 /* LogEntryView */,
+				05C3D2DE298D46FA002B20D8 /* TextFieldView */,
 			);
 			path = Reusable;
 			sourceTree = "<group>";
@@ -142,10 +150,27 @@
 		05C3D2D7298D464F002B20D8 /* Containers */ = {
 			isa = PBXGroup;
 			children = (
+				05C3D2CD298CFA56002B20D8 /* AccessoriedMarginedView.swift */,
 				05C3D210298BCA31002B20D8 /* TitledComponentView.swift */,
 				05C3D2BF298C21A7002B20D8 /* MarginedView.swift */,
 			);
 			path = Containers;
+			sourceTree = "<group>";
+		};
+		05C3D2DD298D469D002B20D8 /* LogEntryView */ = {
+			isa = PBXGroup;
+			children = (
+				05C3D2C3298C3C76002B20D8 /* LogEntryView.swift */,
+			);
+			path = LogEntryView;
+			sourceTree = "<group>";
+		};
+		05C3D2DE298D46FA002B20D8 /* TextFieldView */ = {
+			isa = PBXGroup;
+			children = (
+				05C3D2DF298D4701002B20D8 /* TextFieldView.swift */,
+			);
+			path = TextFieldView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,9 +276,12 @@
 				05C3D2EE298D854C002B20D8 /* LoggedTime.swift in Sources */,
 				05C3D200298BC9E7002B20D8 /* UIView+Layout.swift in Sources */,
 				05C3D1E5298BC973002B20D8 /* Global.swift in Sources */,
+				05C3D2C4298C3C76002B20D8 /* LogEntryView.swift in Sources */,
 				05C3D1B4298BC4B4002B20D8 /* AppDelegate.swift in Sources */,
 				05C3D223298BCA31002B20D8 /* TitledComponentView.swift in Sources */,
 				05C3D1B6298BC4B4002B20D8 /* SceneDelegate.swift in Sources */,
+				05C3D2CE298CFA56002B20D8 /* AccessoriedMarginedView.swift in Sources */,
+				05C3D2E0298D4701002B20D8 /* TextFieldView.swift in Sources */,
 				05C3D1EE298BC9A7002B20D8 /* ViewModel.swift in Sources */,
 				05C3D2C0298C21A7002B20D8 /* MarginedView.swift in Sources */,
 			);
