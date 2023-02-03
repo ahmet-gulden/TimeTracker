@@ -25,6 +25,7 @@
 		05C3D2D2298D0C91002B20D8 /* Int+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D2D1298D0C91002B20D8 /* Int+Date.swift */; };
 		05C3D2D4298D0DF2002B20D8 /* IntDateExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D2D3298D0DF2002B20D8 /* IntDateExtensionTests.swift */; };
 		05C3D2E0298D4701002B20D8 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D2DF298D4701002B20D8 /* TextFieldView.swift */; };
+		05C3D2E2298D477C002B20D8 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D2E1298D477C002B20D8 /* UIViewController+Alert.swift */; };
 		05C3D2E4298D4F96002B20D8 /* OneSecondPulseTimerContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D2E3298D4F96002B20D8 /* OneSecondPulseTimerContext.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		05C3D2D1298D0C91002B20D8 /* Int+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Date.swift"; sourceTree = "<group>"; };
 		05C3D2D3298D0DF2002B20D8 /* IntDateExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntDateExtensionTests.swift; sourceTree = "<group>"; };
 		05C3D2DF298D4701002B20D8 /* TextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		05C3D2E1298D477C002B20D8 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		05C3D2E3298D4F96002B20D8 /* OneSecondPulseTimerContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneSecondPulseTimerContext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				05C3D2D1298D0C91002B20D8 /* Int+Date.swift */,
+				05C3D2E1298D477C002B20D8 /* UIViewController+Alert.swift */,
 				05C3D1F9298BC9E7002B20D8 /* UIView+Layout.swift */,
 			);
 			path = Extensions;
@@ -318,6 +321,7 @@
 				05C3D2CC298C51C2002B20D8 /* TimerContext.swift in Sources */,
 				05C3D2E0298D4701002B20D8 /* TextFieldView.swift in Sources */,
 				05C3D1EE298BC9A7002B20D8 /* ViewModel.swift in Sources */,
+				05C3D2E2298D477C002B20D8 /* UIViewController+Alert.swift in Sources */,
 				05C3D2E4298D4F96002B20D8 /* OneSecondPulseTimerContext.swift in Sources */,
 				05C3D2C0298C21A7002B20D8 /* MarginedView.swift in Sources */,
 				05C3D292298BCA92002B20D8 /* MainViewModel.swift in Sources */,

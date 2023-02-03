@@ -55,7 +55,7 @@ private extension MainViewController {
                 self.logEntryView.isRecording = false
                 self.viewModel.endRecording()
             } else if self.logEntryView.entryText.isEmpty {
-                // TODO show alert
+                self.ttr_showAlert(withMessage: "Please enter a description")
             } else {
                 self.logEntryView.isRecording = true
                 self.viewModel.startRecording(entryText: self.logEntryView.entryText)
