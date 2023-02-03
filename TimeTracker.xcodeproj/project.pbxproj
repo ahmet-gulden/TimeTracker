@@ -17,10 +17,13 @@
 		05C3D200298BC9E7002B20D8 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D1F9298BC9E7002B20D8 /* UIView+Layout.swift */; };
 		05C3D223298BCA31002B20D8 /* TitledComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D210298BCA31002B20D8 /* TitledComponentView.swift */; };
 		05C3D291298BCA92002B20D8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D255298BCA92002B20D8 /* MainViewController.swift */; };
+		05C3D292298BCA92002B20D8 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D257298BCA92002B20D8 /* MainViewModel.swift */; };
 		05C3D2C0298C21A7002B20D8 /* MarginedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D2BF298C21A7002B20D8 /* MarginedView.swift */; };
 		05C3D2C4298C3C76002B20D8 /* LogEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D2C3298C3C76002B20D8 /* LogEntryView.swift */; };
+		05C3D2CC298C51C2002B20D8 /* TimerContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D2CB298C51C2002B20D8 /* TimerContext.swift */; };
 		05C3D2CE298CFA56002B20D8 /* AccessoriedMarginedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D2CD298CFA56002B20D8 /* AccessoriedMarginedView.swift */; };
 		05C3D2E0298D4701002B20D8 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D2DF298D4701002B20D8 /* TextFieldView.swift */; };
+		05C3D2E4298D4F96002B20D8 /* OneSecondPulseTimerContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D2E3298D4F96002B20D8 /* OneSecondPulseTimerContext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,11 +50,14 @@
 		05C3D1F9298BC9E7002B20D8 /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		05C3D210298BCA31002B20D8 /* TitledComponentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitledComponentView.swift; sourceTree = "<group>"; };
 		05C3D255298BCA92002B20D8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		05C3D257298BCA92002B20D8 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		05C3D2B6298BCD21002B20D8 /* LoggedTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedTime.swift; sourceTree = "<group>"; };
 		05C3D2BF298C21A7002B20D8 /* MarginedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarginedView.swift; sourceTree = "<group>"; };
 		05C3D2C3298C3C76002B20D8 /* LogEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEntryView.swift; sourceTree = "<group>"; };
+		05C3D2CB298C51C2002B20D8 /* TimerContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerContext.swift; sourceTree = "<group>"; };
 		05C3D2CD298CFA56002B20D8 /* AccessoriedMarginedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoriedMarginedView.swift; sourceTree = "<group>"; };
 		05C3D2DF298D4701002B20D8 /* TextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		05C3D2E3298D4F96002B20D8 /* OneSecondPulseTimerContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneSecondPulseTimerContext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,7 @@
 				05C3D1B5298BC4B4002B20D8 /* SceneDelegate.swift */,
 				05C3D1E6298BC9A7002B20D8 /* Base */,
 				05C3D1F3298BC9E7002B20D8 /* Extensions */,
+				05C3D2BC298BE8CF002B20D8 /* Managers */,
 				05C3D2B5298BCD0F002B20D8 /* Models */,
 				05C3D202298BCA31002B20D8 /* Reusable */,
 				05C3D22C298BCA92002B20D8 /* Scenes */,
@@ -146,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				05C3D255298BCA92002B20D8 /* MainViewController.swift */,
+				05C3D257298BCA92002B20D8 /* MainViewModel.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -156,6 +164,15 @@
 				05C3D2B6298BCD21002B20D8 /* LoggedTime.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		05C3D2BC298BE8CF002B20D8 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				05C3D2E3298D4F96002B20D8 /* OneSecondPulseTimerContext.swift */,
+				05C3D2CB298C51C2002B20D8 /* TimerContext.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		05C3D2D7298D464F002B20D8 /* Containers */ = {
@@ -293,9 +310,12 @@
 				05C3D223298BCA31002B20D8 /* TitledComponentView.swift in Sources */,
 				05C3D1B6298BC4B4002B20D8 /* SceneDelegate.swift in Sources */,
 				05C3D2CE298CFA56002B20D8 /* AccessoriedMarginedView.swift in Sources */,
+				05C3D2CC298C51C2002B20D8 /* TimerContext.swift in Sources */,
 				05C3D2E0298D4701002B20D8 /* TextFieldView.swift in Sources */,
 				05C3D1EE298BC9A7002B20D8 /* ViewModel.swift in Sources */,
+				05C3D2E4298D4F96002B20D8 /* OneSecondPulseTimerContext.swift in Sources */,
 				05C3D2C0298C21A7002B20D8 /* MarginedView.swift in Sources */,
+				05C3D292298BCA92002B20D8 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
