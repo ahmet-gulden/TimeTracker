@@ -8,7 +8,6 @@
 import UIKit
 
 final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
     var window: UIWindow?
 
     func scene(
@@ -16,9 +15,16 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         willConnectTo session: UISceneSession,
         options connectionOptions: UIScene.ConnectionOptions
     ) {
-        guard let windowScene = (scene as? UIWindowScene) else { return }
+        prepareWindow(for: scene as? UIWindowScene)
+    }
+}
 
-        window = UIWindow(windowScene: windowScene)
+// MARK: Window Preparation
+
+private extension SceneDelegate {
+    func prepareWindow(for windowScene: UIWindowScene?) {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.windowScene = windowScene
         window?.makeKeyAndVisible()
     }
 }
