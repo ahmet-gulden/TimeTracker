@@ -38,12 +38,12 @@ extension MainViewModel {
     /// - Parameter entryText: Description text that is entered by the user.
     func startRecording(entryText: String) {
         emit(.recordingStarted)
-        elapsedTimeText = "0"
+        elapsedTimeText = 0.asSecondsPulseTime
         timerContext.start(entryText: entryText, pulseHandler: { [weak self] in
             guard let self else {
                 return
             }
-            self.elapsedTimeText = "\(self.timerContext.elapsedSeconds)"
+            self.elapsedTimeText = self.timerContext.elapsedSeconds.asSecondsPulseTime
         })
     }
 
