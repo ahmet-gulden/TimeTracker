@@ -11,6 +11,7 @@
 		05C3D1B6298BC4B4002B20D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D1B5298BC4B4002B20D8 /* SceneDelegate.swift */; };
 		05C3D1BD298BC4B5002B20D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C3D1BC298BC4B5002B20D8 /* Assets.xcassets */; };
 		05C3D1C0298BC4B5002B20D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05C3D1BE298BC4B5002B20D8 /* LaunchScreen.storyboard */; };
+		05C3D1EE298BC9A7002B20D8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D1E8298BC9A7002B20D8 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,7 @@
 		05C3D1C1298BC4B5002B20D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05C3D1C6298BC4B5002B20D8 /* TimeTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C3D1CA298BC4B5002B20D8 /* TimeTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTrackerTests.swift; sourceTree = "<group>"; };
+		05C3D1E8298BC9A7002B20D8 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			children = (
 				05C3D1B3298BC4B4002B20D8 /* AppDelegate.swift */,
 				05C3D1B5298BC4B4002B20D8 /* SceneDelegate.swift */,
+				05C3D1E6298BC9A7002B20D8 /* Base */,
 				05C3D1BC298BC4B5002B20D8 /* Assets.xcassets */,
 				05C3D1BE298BC4B5002B20D8 /* LaunchScreen.storyboard */,
 				05C3D1C1298BC4B5002B20D8 /* Info.plist */,
@@ -88,6 +91,14 @@
 				05C3D1CA298BC4B5002B20D8 /* TimeTrackerTests.swift */,
 			);
 			path = TimeTrackerTests;
+			sourceTree = "<group>";
+		};
+		05C3D1E6298BC9A7002B20D8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				05C3D1E8298BC9A7002B20D8 /* ViewModel.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +203,7 @@
 			files = (
 				05C3D1B4298BC4B4002B20D8 /* AppDelegate.swift in Sources */,
 				05C3D1B6298BC4B4002B20D8 /* SceneDelegate.swift in Sources */,
+				05C3D1EE298BC9A7002B20D8 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
