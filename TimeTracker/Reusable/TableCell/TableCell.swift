@@ -8,7 +8,7 @@
 import UIKit
 
 /// Generic table view cell that has specific content inside.
-final class TableCell<Content: UIView>: UITableViewCell {
+final class TableCell<Content: UIView>: UITableViewCell, Dequeueable, Reusable {
     /// Content of the table cell.
     let content = Content()
 

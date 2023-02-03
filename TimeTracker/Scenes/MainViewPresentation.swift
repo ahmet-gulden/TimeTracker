@@ -16,7 +16,8 @@ struct MainViewPresentation: Equatable {
 
         init(loggedTime: LoggedTime) {
             self.title = loggedTime.description
-            self.date = "" // TODO
+            let dateString = DateFormatter.ttr_standard.string(from: loggedTime.startTime)
+            self.date = "\(loggedTime.elapsedSeconds.asSecondsElapsedTime) on \(dateString)"
         }
     }
 

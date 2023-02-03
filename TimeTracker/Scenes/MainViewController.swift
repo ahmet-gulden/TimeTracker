@@ -11,6 +11,7 @@ import UIKit
 final class MainViewController: UIViewController {
     private let viewModel: MainViewModel
     private let logEntryView = LogEntryView()
+    private let tableView = UITableView(frame: .zero, style: .grouped)
 
     init(viewModel: MainViewModel) {
         self.viewModel = viewModel
@@ -39,7 +40,20 @@ private extension MainViewController {
         view.backgroundColor = .systemBackground
         view.keyboardLayoutGuide.followsUndockedKeyboard = true
 
+        configureTableView()
         configureLogEntryView()
+    }
+
+    func configureTableView() {
+        tableView.backgroundColor = .systemBackground
+        tableView.keyboardDismissMode = .onDrag
+        tableView.dataSource = self
+        tableView.backgroundColor = .none
+        tableView.separatorStyle = .none
+        tableView.allowsSelection = false
+        tableView.tableFooterView = UIView()
+        tableView.ttr_registerCellType(TableCell<AccessoriedMarginedView<TitledLabelView, DeleteButtonAccessory>>.self)
+        view.ttr_addSubview(tableView, toSafeAreaLayoutGuide: true, bottomInset: nil)
     }
 
     func configureLogEntryView() {
@@ -69,6 +83,7 @@ private extension MainViewController {
             bottomInset: nil
         )
         NSLayoutConstraint.activate([
+            logEntryView.topAnchor.constraint(equalTo: tableView.bottomAnchor),
             view.keyboardLayoutGuide.topAnchor.constraint(
                 equalTo: logEntryView.bottomAnchor,
                 constant: Global.Margin.vertical
@@ -99,10 +114,35 @@ private extension MainViewController {
     }
 }
 
+// MARK: UITableViewDataSource
+
+extension MainViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = TableCell<AccessoriedMarginedView<TitledLabelView, DeleteButtonAccessory>>.ttr_dequeue(
+            from: tableView,
+            for: indexPath
+        )
+        let item = viewModel.content.entries[indexPath.row]
+        cell.content.content.titleLabel.text = item.title
+        cell.content.content.componentView.text = item.date
+        cell.content.accessory.deleteButtonTapHandler = { [weak self] in
+            self?.viewModel.deleteLoggedTime(at: indexPath.row)
+        }
+        return cell
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        viewModel.content.entries.count
+    }
+}
+
 // MARK: Helpers
 
 private extension MainViewController {
     func reloadTableView() {
-        // TODO
+        tableView.ttr_emptyStatePresentation = viewModel.content.entries.isEmpty ? viewModel.content.emptyStatePresentation : nil
+        tableView.reloadData()
+        // Scroll to bottom to see the latest content
+        tableView.setContentOffset(CGPoint(x: 0, y: CGFloat.greatestFiniteMagnitude), animated: false)
     }
 }

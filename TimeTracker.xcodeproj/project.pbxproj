@@ -12,10 +12,13 @@
 		05C3D1BD298BC4B5002B20D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C3D1BC298BC4B5002B20D8 /* Assets.xcassets */; };
 		05C3D1C0298BC4B5002B20D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05C3D1BE298BC4B5002B20D8 /* LaunchScreen.storyboard */; };
 		05C3D1E5298BC973002B20D8 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D1E4298BC973002B20D8 /* Global.swift */; };
+		05C3D1ED298BC9A7002B20D8 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D1E7298BC9A7002B20D8 /* Reusable.swift */; };
 		05C3D1EE298BC9A7002B20D8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D1E8298BC9A7002B20D8 /* ViewModel.swift */; };
 		05C3D2EE298D854C002B20D8 /* LoggedTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D2B6298BCD21002B20D8 /* LoggedTime.swift */; };
 		05C3D1F1298BC9A7002B20D8 /* MainViewPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D1EB298BC9A7002B20D8 /* MainViewPresentation.swift */; };
+		05C3D1F2298BC9A7002B20D8 /* Dequeueable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D1EC298BC9A7002B20D8 /* Dequeueable.swift */; };
 		05C3D1FD298BC9E7002B20D8 /* UITableView+EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D1F6298BC9E7002B20D8 /* UITableView+EmptyState.swift */; };
+		05C3D1FF298BC9E7002B20D8 /* DateFormatter+Standard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D1F8298BC9E7002B20D8 /* DateFormatter+Standard.swift */; };
 		05C3D200298BC9E7002B20D8 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D1F9298BC9E7002B20D8 /* UIView+Layout.swift */; };
 		05C3D21F298BCA31002B20D8 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D208298BCA31002B20D8 /* EmptyStateView.swift */; };
 		05C3D222298BCA31002B20D8 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D20E298BCA31002B20D8 /* TableCell.swift */; };
@@ -56,9 +59,12 @@
 		05C3D1C1298BC4B5002B20D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05C3D1C6298BC4B5002B20D8 /* TimeTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C3D1E4298BC973002B20D8 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		05C3D1E7298BC9A7002B20D8 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		05C3D1E8298BC9A7002B20D8 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		05C3D1EB298BC9A7002B20D8 /* MainViewPresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewPresentation.swift; sourceTree = "<group>"; };
+		05C3D1EC298BC9A7002B20D8 /* Dequeueable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dequeueable.swift; sourceTree = "<group>"; };
 		05C3D1F6298BC9E7002B20D8 /* UITableView+EmptyState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+EmptyState.swift"; sourceTree = "<group>"; };
+		05C3D1F8298BC9E7002B20D8 /* DateFormatter+Standard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Standard.swift"; sourceTree = "<group>"; };
 		05C3D1F9298BC9E7002B20D8 /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		05C3D208298BCA31002B20D8 /* EmptyStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		05C3D20E298BCA31002B20D8 /* TableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
@@ -147,6 +153,8 @@
 		05C3D1E6298BC9A7002B20D8 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				05C3D1EC298BC9A7002B20D8 /* Dequeueable.swift */,
+				05C3D1E7298BC9A7002B20D8 /* Reusable.swift */,
 				05C3D1E8298BC9A7002B20D8 /* ViewModel.swift */,
 			);
 			path = Base;
@@ -155,6 +163,7 @@
 		05C3D1F3298BC9E7002B20D8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				05C3D1F8298BC9E7002B20D8 /* DateFormatter+Standard.swift */,
 				05C3D2D1298D0C91002B20D8 /* Int+Date.swift */,
 				05C3D1F6298BC9E7002B20D8 /* UITableView+EmptyState.swift */,
 				05C3D2E1298D477C002B20D8 /* UIViewController+Alert.swift */,
@@ -373,6 +382,7 @@
 				05C3D1FD298BC9E7002B20D8 /* UITableView+EmptyState.swift in Sources */,
 				05C3D291298BCA92002B20D8 /* MainViewController.swift in Sources */,
 				05C3D2D6298D442E002B20D8 /* UserDefaultsLoggedTimeStore.swift in Sources */,
+				05C3D1FF298BC9E7002B20D8 /* DateFormatter+Standard.swift in Sources */,
 				05C3D1B4298BC4B4002B20D8 /* AppDelegate.swift in Sources */,
 				05C3D223298BCA31002B20D8 /* TitledComponentView.swift in Sources */,
 				05C3D2BE298BE8DF002B20D8 /* LoggedTimeStore.swift in Sources */,
@@ -385,6 +395,8 @@
 				05C3D2E2298D477C002B20D8 /* UIViewController+Alert.swift in Sources */,
 				05C3D2D0298CFDB5002B20D8 /* DeleteButtonAccessory.swift in Sources */,
 				05C3D2E4298D4F96002B20D8 /* OneSecondPulseTimerContext.swift in Sources */,
+				05C3D1F2298BC9A7002B20D8 /* Dequeueable.swift in Sources */,
+				05C3D1ED298BC9A7002B20D8 /* Reusable.swift in Sources */,
 				05C3D222298BCA31002B20D8 /* TableCell.swift in Sources */,
 				05C3D2C0298C21A7002B20D8 /* MarginedView.swift in Sources */,
 				05C3D292298BCA92002B20D8 /* MainViewModel.swift in Sources */,
