@@ -18,13 +18,16 @@
 		05C3D1FD298BC9E7002B20D8 /* UITableView+EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D1F6298BC9E7002B20D8 /* UITableView+EmptyState.swift */; };
 		05C3D200298BC9E7002B20D8 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D1F9298BC9E7002B20D8 /* UIView+Layout.swift */; };
 		05C3D21F298BCA31002B20D8 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D208298BCA31002B20D8 /* EmptyStateView.swift */; };
+		05C3D222298BCA31002B20D8 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D20E298BCA31002B20D8 /* TableCell.swift */; };
 		05C3D223298BCA31002B20D8 /* TitledComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D210298BCA31002B20D8 /* TitledComponentView.swift */; };
+		05C3D224298BCA31002B20D8 /* TitledLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D211298BCA31002B20D8 /* TitledLabelView.swift */; };
 		05C3D291298BCA92002B20D8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D255298BCA92002B20D8 /* MainViewController.swift */; };
 		05C3D292298BCA92002B20D8 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D257298BCA92002B20D8 /* MainViewModel.swift */; };
 		05C3D2C0298C21A7002B20D8 /* MarginedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D2BF298C21A7002B20D8 /* MarginedView.swift */; };
 		05C3D2C4298C3C76002B20D8 /* LogEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D2C3298C3C76002B20D8 /* LogEntryView.swift */; };
 		05C3D2CC298C51C2002B20D8 /* TimerContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D2CB298C51C2002B20D8 /* TimerContext.swift */; };
 		05C3D2CE298CFA56002B20D8 /* AccessoriedMarginedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D2CD298CFA56002B20D8 /* AccessoriedMarginedView.swift */; };
+		05C3D2D0298CFDB5002B20D8 /* DeleteButtonAccessory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D2CF298CFDB5002B20D8 /* DeleteButtonAccessory.swift */; };
 		05C3D2D2298D0C91002B20D8 /* Int+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D2D1298D0C91002B20D8 /* Int+Date.swift */; };
 		05C3D2D4298D0DF2002B20D8 /* IntDateExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D2D3298D0DF2002B20D8 /* IntDateExtensionTests.swift */; };
 		05C3D2E0298D4701002B20D8 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C3D2DF298D4701002B20D8 /* TextFieldView.swift */; };
@@ -56,7 +59,9 @@
 		05C3D1F6298BC9E7002B20D8 /* UITableView+EmptyState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+EmptyState.swift"; sourceTree = "<group>"; };
 		05C3D1F9298BC9E7002B20D8 /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		05C3D208298BCA31002B20D8 /* EmptyStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		05C3D20E298BCA31002B20D8 /* TableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
 		05C3D210298BCA31002B20D8 /* TitledComponentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitledComponentView.swift; sourceTree = "<group>"; };
+		05C3D211298BCA31002B20D8 /* TitledLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitledLabelView.swift; sourceTree = "<group>"; };
 		05C3D255298BCA92002B20D8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		05C3D257298BCA92002B20D8 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		05C3D2B6298BCD21002B20D8 /* LoggedTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedTime.swift; sourceTree = "<group>"; };
@@ -64,6 +69,7 @@
 		05C3D2C3298C3C76002B20D8 /* LogEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEntryView.swift; sourceTree = "<group>"; };
 		05C3D2CB298C51C2002B20D8 /* TimerContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerContext.swift; sourceTree = "<group>"; };
 		05C3D2CD298CFA56002B20D8 /* AccessoriedMarginedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoriedMarginedView.swift; sourceTree = "<group>"; };
+		05C3D2CF298CFDB5002B20D8 /* DeleteButtonAccessory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButtonAccessory.swift; sourceTree = "<group>"; };
 		05C3D2D1298D0C91002B20D8 /* Int+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Date.swift"; sourceTree = "<group>"; };
 		05C3D2D3298D0DF2002B20D8 /* IntDateExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntDateExtensionTests.swift; sourceTree = "<group>"; };
 		05C3D2DF298D4701002B20D8 /* TextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
@@ -157,9 +163,12 @@
 			isa = PBXGroup;
 			children = (
 				05C3D2D7298D464F002B20D8 /* Containers */,
+				05C3D2DC298D4695002B20D8 /* DeleteButtonAccessory */,
 				05C3D2D8298D4656002B20D8 /* EmptyStateView */,
 				05C3D2DD298D469D002B20D8 /* LogEntryView */,
+				05C3D2D9298D465D002B20D8 /* TableCell */,
 				05C3D2DE298D46FA002B20D8 /* TextFieldView */,
+				05C3D2DB298D468E002B20D8 /* TitledLabelView */,
 			);
 			path = Reusable;
 			sourceTree = "<group>";
@@ -207,6 +216,30 @@
 				05C3D208298BCA31002B20D8 /* EmptyStateView.swift */,
 			);
 			path = EmptyStateView;
+			sourceTree = "<group>";
+		};
+		05C3D2D9298D465D002B20D8 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				05C3D20E298BCA31002B20D8 /* TableCell.swift */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		05C3D2DB298D468E002B20D8 /* TitledLabelView */ = {
+			isa = PBXGroup;
+			children = (
+				05C3D211298BCA31002B20D8 /* TitledLabelView.swift */,
+			);
+			path = TitledLabelView;
+			sourceTree = "<group>";
+		};
+		05C3D2DC298D4695002B20D8 /* DeleteButtonAccessory */ = {
+			isa = PBXGroup;
+			children = (
+				05C3D2CF298CFDB5002B20D8 /* DeleteButtonAccessory.swift */,
+			);
+			path = DeleteButtonAccessory;
 			sourceTree = "<group>";
 		};
 		05C3D2DD298D469D002B20D8 /* LogEntryView */ = {
@@ -329,6 +362,7 @@
 				05C3D200298BC9E7002B20D8 /* UIView+Layout.swift in Sources */,
 				05C3D1E5298BC973002B20D8 /* Global.swift in Sources */,
 				05C3D21F298BCA31002B20D8 /* EmptyStateView.swift in Sources */,
+				05C3D224298BCA31002B20D8 /* TitledLabelView.swift in Sources */,
 				05C3D2C4298C3C76002B20D8 /* LogEntryView.swift in Sources */,
 				05C3D1FD298BC9E7002B20D8 /* UITableView+EmptyState.swift in Sources */,
 				05C3D291298BCA92002B20D8 /* MainViewController.swift in Sources */,
@@ -341,7 +375,9 @@
 				05C3D2E0298D4701002B20D8 /* TextFieldView.swift in Sources */,
 				05C3D1EE298BC9A7002B20D8 /* ViewModel.swift in Sources */,
 				05C3D2E2298D477C002B20D8 /* UIViewController+Alert.swift in Sources */,
+				05C3D2D0298CFDB5002B20D8 /* DeleteButtonAccessory.swift in Sources */,
 				05C3D2E4298D4F96002B20D8 /* OneSecondPulseTimerContext.swift in Sources */,
+				05C3D222298BCA31002B20D8 /* TableCell.swift in Sources */,
 				05C3D2C0298C21A7002B20D8 /* MarginedView.swift in Sources */,
 				05C3D292298BCA92002B20D8 /* MainViewModel.swift in Sources */,
 				05C3D1F1298BC9A7002B20D8 /* MainViewPresentation.swift in Sources */,
